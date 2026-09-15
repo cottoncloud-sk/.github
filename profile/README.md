@@ -16,7 +16,16 @@ CottonCloud is a Slovak WordPress development and web design studio focused on m
 - [Route-Aware WordPress Assets](https://github.com/cottoncloud-sk/wordpress-route-aware-assets) — a conditional enqueue/dequeue pattern with an executable PHP contract.
 - [Visible JSON-LD Final-HTML Guard](https://github.com/cottoncloud-sk/wordpress-final-html-jsonld-guard) — a sanitized final-render boundary pattern with an executable 18-assertion PHP contract.
 - [Custom Performance Cache for WordPress](https://cottoncloud.sk/pluginy/custom-performance-cache/?utm_source=github&utm_medium=referral&utm_campaign=cc_cpc_awareness_2026_08&utm_content=org_profile_cpc) — page-cache diagnostics built around explicit MISS/HIT verification and rollback-aware changes; results remain host- and configuration-dependent.
+- [Woo Campaigns for WooCommerce](https://cottoncloud.sk/pluginy/cottoncloud-woo-campaigns/?utm_source=github&utm_medium=referral&utm_campaign=woo_campaigns_launch&utm_content=org_profile) — a Slovak WordPress plugin for controlled newsletter campaigns from eligible confirmed-order recipients or CSV, with individual coupons, own SMTP/TLS, Action Scheduler queues, unsubscribe blocking and separated delivery/open/click/error states.
 - [CottonCloud Engineering Notes](https://cottoncloud-engineering.hashnode.dev/) — technical articles and anonymized implementation studies.
+
+## WooCommerce campaign controls
+
+CottonCloud Woo Campaigns 1.0.20 is designed for stores that need explicit operational gates instead of an unrestricted bulk-send button. Preview mode sends nothing; a real queue is created only after a deliberate unlock and separate confirmation. The store operator remains responsible for the legal basis, recipient selection, similarity of the offer and SMTP configuration.
+
+For the Slovak customer-exception workflow, an address is eligible only when it was obtained by the same seller during a sale, the message promotes that seller's own similar goods or services, and the customer was offered a simple opt-out both when the address was collected and in every message. The Slovak mode uses at most a one-year order range and excludes blocked or unsubscribed addresses. It is not a blanket permission to contact every customer.
+
+Runtime requirements: WordPress 6.5+, active WooCommerce, HTTPS, PHP 7.4+ with Sodium, InnoDB, an external cron and the store's own SMTP/TLS service. Full product, licensing and compatibility details are maintained on the [Woo Campaigns product page](https://cottoncloud.sk/pluginy/cottoncloud-woo-campaigns/?utm_source=github&utm_medium=referral&utm_campaign=woo_campaigns_launch&utm_content=org_profile_details).
 
 ## Studio
 
