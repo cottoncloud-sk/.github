@@ -8,15 +8,17 @@ Tento dokument sumarizuje dve verejne overiteľné implementácie. Nezverejňuje
 
 PredámKúpim.sk je marketplace s verejným Next.js rozhraním nad živým aplikačným jadrom. Pri novom frontende sme riešili najmä:
 
-- kategórie a podkategórie bez straty existujúcej navigácie;
+- kategórie, podkategórie a existujúcu navigáciu;
 - lokálne hľadanie, filtre a zrozumiteľné prázdne výsledky;
 - detail inzerátu a konzistentnú cestu späť do výsledkov;
 - desktopové aj mobilné ovládanie;
 - oddelenie verejného prehliadania od prihlásenia, pridania inzerátu a platobných tokov.
 
-Verejná prípadová štúdia obsahuje skutočné screenshoty nového rozhrania, popis rozhodnutí a výslovné hranice toho, čo bolo overené:
+Kontrola 29. septembra 2026 zachytila stratu výberu kategórie po obnovení výsledkov pri prechode z domovskej stránky aj pri existujúcom priamom odkaze na kategóriu. Nejde preto o potvrdenie úplného zachovania funkcií; tieto dva kroky vyžadujú opravu a nové overenie.
 
-[PredámKúpim.sk: Next.js marketplace bez straty funkcií](https://cottoncloud.sk/pripadova-studia-predamkupim-nextjs-marketplace/?utm_source=github&utm_medium=referral&utm_campaign=nextjs_react_case_studies_2026_09&utm_content=predamkupim)
+Verejná prípadová štúdia obsahuje skutočné screenshoty nového rozhrania, popis rozhodnutí, presný postup reprodukcie a hranice toho, čo bolo overené:
+
+[PredámKúpim.sk: Next.js marketplace nad existujúcim jadrom](https://cottoncloud.sk/pripadova-studia-predamkupim-nextjs-marketplace/?utm_source=github&utm_medium=referral&utm_campaign=nextjs_react_case_studies_2026_09&utm_content=predamkupim)
 
 ## GayZoznamka.eu: Next.js web a React aplikačná vrstva
 
